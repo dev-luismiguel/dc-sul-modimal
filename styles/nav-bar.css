@@ -1,0 +1,115 @@
+:root {
+    --spacing-tiny: 4px;
+    --spacing-smaller: 8px;
+    --spacing-small: 12px;
+    --spacing-normal: 16px;
+    --spacing-medium: 24px;
+    --spacing-large: 32px;
+    --spacing-huge: 48px;
+    --spacing-massive: 64px;
+
+    --primary-primary-600: #5A6D57;
+    --neutral-gray-404040: #404040;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 500 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'League_Spartan';
+    src: url('../assets/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.green-bar {
+    padding: var(--spacing-tiny);
+    background-color: var(--primary-primary-600);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    gap: var(--spacing-normal);
+    justify-content: space-between;
+    display: flex;
+
+    padding: var(--spacing-normal);
+
+}
+
+.logo {
+    
+    text-align: center;
+}
+
+.logotitle {
+    font-family: League_Spartan;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logotitle p {
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 12.5px;
+    letter-spacing: 3.2px;
+    color: var(--neutral-gray-404040);
+}
+
+.logo-subtitle {
+    color: var(--neutral-gray-404040);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: 12.5px;
+    letter-spacing: 1px;
+}
+
+.navbar-links {
+
+    justify-content: space-evenly;
+    display: flex;
+    flex: 1;
+    gap: var(--spacing-normal);
+}
+
+.navbar-links a {
+    color: var(--neutral-gray-404040);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 8px;
+    text-decoration: none;
+}
+#menu_mobile{display: none;}
+#search_mobile{
+    display: none;}
+
+@media (max-width: 768px){
+    .navbar-links{display: none;}
+    #search_mobile{
+        display: block;
+    }
+    #search_desktop{display: none;}
+    #person_desktop{
+        display: none;
+    }
+    #menu_mobile{display: block;}
+    .mobile{display: flex;}
+}
