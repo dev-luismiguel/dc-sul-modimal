@@ -34,3 +34,83 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.footer {
+    background-color: var(--neutral-gray-404040);
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.footer-first {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 20px;
+    gap: 3px;
+    margin-left: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"] {
+    background-color: var(--neutral-gray-404040);
+    padding: 10px;
+    border: 1.2px solid gainsboro;
+    width: 350px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 90px;
+}
+
+.footer-second {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 15px;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h6 {
+    color: grey;
+    font-size: 10px;
+}
+
+.final {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+}
